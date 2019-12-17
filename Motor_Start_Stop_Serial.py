@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
-        self.ser = serial.Serial('COM8', 9600, timeout=1)
+        self.ser = serial.Serial('COM8', 115200, timeout=1)
 
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
